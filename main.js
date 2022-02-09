@@ -11,16 +11,43 @@ fetch(url)
     
         //template literal- start with `` instead of ""
         root.innerHTML = `
-        <p>${data.name}</p> 
+        <h2>${data.name}</h2> 
         <img src=${data.avatar_url} width="150" />
-        <div class="name"> 
+        `
+        //Question: why is this in this function, but then seperate function for the for loop?
+        console.log(data.html_url)
+        return data.repos_url // returning this so I can make another request in the next step
+    })
+    //add the repos 
+    .then((reposUrl) => fetch(reposUrl))
+    .then((res) => res.json())
+    .then((data) => {
+        //can do stuff here with repos data
+        console.log(data)
+  // here I'm just taking ONE repo so that I can manage it more easily,
+    // but I will want to do this in a loop for ALL of the repos.
+//     const justOneRepo = data[0]
+//     console.log(justOneRepo)
+//     document.querySelector(
+//         '#repo-area'
+//     ).innerHTML= `<a href=${justOneRepo.url}>${justOneRepo.name}</a>`
+// })
+    
+    //Here it is with a loop
+    for (let repo of data) {
+        document.querySelector(
+        '#repo-area'
+        ).innerHTML += `<p>
+        <div class="repo-line"> 
         <i class="fa-solid fa-book"></i>
-        <h3>${data.name}</h3>
+        <a href=${repo.html_url}>${repo.name}</a><p
         </div>
         `
-    })
+    }
+})
 
-    .then{repos url}
+//<h3>${data.name}</h3>
+
         //This would be the long way to do it. Don't do it bc would need to it for every single key over and over
         // let username = document.createElement('h3')
         // username.innerText = data.login 
