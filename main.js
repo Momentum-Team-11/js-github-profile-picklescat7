@@ -33,7 +33,7 @@ fetch(url)
 //     ).innerHTML= `<a href=${justOneRepo.url}>${justOneRepo.name}</a>`
 // })
     
-    //Here it is with a loop
+    //Here it is with a loop putting the 'stuff' on the page from the fetch above
     for (let repo of data) {
         document.querySelector(
         '#repo-area'
