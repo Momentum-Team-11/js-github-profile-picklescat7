@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding-left: 25px;
+    background-color: aquamarine;
+    /* font-family: 'Nunito', sans-serif; */
+}
+
+/* .username { */
+    /* color: white; */
+/* } */
+
+/* .name { */
+    /* display: flex; */
+    /* width: 100%; */
+/* } */
