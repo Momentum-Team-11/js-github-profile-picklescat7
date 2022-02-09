@@ -13,6 +13,11 @@ fetch(url)
         root.innerHTML = `
         <h2>${data.name}</h2> 
         <img src=${data.avatar_url} width="150" />
+        <div class = "box-1">
+            <p><b>Location:<b> ${data.location}</p>
+            <p><b>GitHub URL:<b> ${data.html_url}</p>
+            <p><b>GitHub Username:<b> ${data.login}</p>
+        </div>
         `
         //Question: why is this in this function, but then seperate function for the for loop?
         console.log(data.html_url)

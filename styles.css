@@ -1,15 +1,61 @@
 * {
     box-sizing: border-box;
+    margin-right: 100px; 
 }
 
 body {
     padding-left: 25px;
-    background-color: aquamarine;
-    /* font-family: 'Nunito', sans-serif; */
+    /*background-color: aquamarine; */
+    font-family: 'Nunito', sans-serif; 
 }
 
-//border-radius: 50%
 
+
+/* .box-1 { */
+    /* border: 1px solid lightgrey; */
+    /* height: 200px; */
+    /* margin-top: 30px;  */
+    /* padding-left: 25px; */
+/* } */
+
+/* #root { */
+    /* height: 200px; */
+    /* margin-top: 30px;  */
+    /* padding-left: 25px; */
+
+/* } */
+
+/* #repo-header { */
+    /* border:1px solid lightgrey; */
+    /* padding-left: 25px; */
+/* }  */
+
+/* #repo-area { */
+    /* border: 1px solid; */
+    /* padding-left: 25px; */
+    /* box-shadow: 5px 10px lightgrey; */
+/* } */
+
+img { 
+    border-radius: 50%;
+    /* float: left; */
+} 
+
+/* h2 { */
+    /* float: right; */
+    /* padding-right: 10px; */
+/* } */
+
+/* h4 { */
+    /* padding-right: 10px; */
+/* } */
+
+/* .box-1 { */
+    /* border: 1px solid lightgrey; */
+    /* height: 200px; */
+    /* margin-top: 30px;  */
+    /* padding-left: 25px; */
+/* } */
 /* .username { */
     /* color: white; */
 /* } */
