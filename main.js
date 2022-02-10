@@ -17,9 +17,9 @@ fetch(url)
 
     
         <div class = "box-1">
-            <p><b>Location:<b> ${data.location}</p>
-            <p><b>GitHub URL:<b> ${data.html_url}</p>
-            <p><b>GitHub Username:<b> ${data.login}</p>
+            <p><b>Location:</b> ${data.location}</p>
+            <p><b>GitHub URL:</b> <a href="${data.html_url}">brittany.craig</a> </p>
+            <p><b>GitHub Username:</b> ${data.login}</p>
         </div>
         `
         //Question: why is this in this function, but then seperate function for the for loop?

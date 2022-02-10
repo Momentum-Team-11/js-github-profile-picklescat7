@@ -4,42 +4,47 @@
 }
 
 body {
-    padding-left: 25px;
+    padding: 10px 100px;
     /*background-color: aquamarine; */
-    font-family: 'Nunito', sans-serif; 
+    font-family: 'Roboto Mono', monospace;  
+    color: darkslategray
 }
 
-
 .header {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10px;
+    /* padding-right: 200px; */
+    padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
 }
 
 .box-1 {
     border: 1px solid lightgrey;
-    /* height: 200px; */
-    /* margin-top: 30px;  */
-    /* padding-left: 25px; */
+    padding-left: 15px;
+    border-radius: 5px;
+    box-shadow: 10px 5px 10px 0 lightgrey;
 } 
 
-/* #root { */
-    /* height: 200px; */
-    /* margin-top: 30px;  */
-    /* padding-left: 25px; */
-
-/* } */
-
-/* #repo-header { */
-    /* border:1px solid lightgrey; */
-    /* padding-left: 25px; */
-/* }  */
+#repo-header {
+    border:1px solid lightgrey;
+    border-radius:5px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    /* box-shadow: 5px 5px lightgrey; */
+    font-size: 23px;
+    /* background-image: linear-gradient(to sides, rgba(255,0,0,0), rgb(179, 172, 172)); */
+    background-image: linear-gradient(to bottom right, lightgrey, white);
+    /* background-color: lightgrey; */
+    font-weight: bold;
+} 
 
 #repo-area {
-    border: 1px solid;
-    padding-left: 25px;
-    box-shadow: 5px 10px lightgrey;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 15px;
+    box-shadow: 10px 5px 10px 0 lightgrey;
 }
 
 img { 
@@ -48,6 +53,12 @@ img {
     /* float: left; */
 } 
 
+/* #root { */
+    /* height: 200px; */
+    /* margin-top: 30px;  */
+    /* padding-left: 25px; */
+
+/* } */
 /* h2 { */
     /* float: right; */
     /* padding-right: 10px; */
