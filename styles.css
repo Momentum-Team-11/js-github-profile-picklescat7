@@ -27,8 +27,8 @@ body {
 } 
 
 #repo-header {
-    border:1px solid lightgrey;
-    border-radius:5px;
+    /* border:1px solid lightgrey; */
+    /* border-radius:5px; */
     padding-left: 15px;
     padding-top: 15px;
     padding-bottom: 5px;
@@ -50,6 +50,7 @@ body {
 img { 
     border-radius: 50%;
     height: 150px ;
+    padding-right: 10px;
     /* float: left; */
 } 
 
