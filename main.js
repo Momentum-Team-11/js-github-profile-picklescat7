@@ -11,8 +11,11 @@ fetch(url)
     
         //template literal- start with `` instead of ""
         root.innerHTML = `
-        <h2>${data.name}</h2> 
+        <div class = "header">
         <img src=${data.avatar_url} width="150" />
+        <h2>${data.name}</h2> </div>
+
+    
         <div class = "box-1">
             <p><b>Location:<b> ${data.location}</p>
             <p><b>GitHub URL:<b> ${data.html_url}</p>
